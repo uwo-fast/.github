@@ -1,10 +1,10 @@
 # Free Appropriate Sustainable Technology (FAST) Research Group
 
 Welcome! Dive into our free and open source projects, look at the project tags for quick insight on what they are each about, our main areas are:
-- [Solar-PV](PV_projects.md)
-- [Frugal-Biomed](Frugal_Biomed_projects.md)
-- [Resilient-Alternative-Food](Resilient_Alt_Food_projects.md)
-- [Scientific-Equipment-Instrumentation](Scientific_Equipment_Instrumentation_Project.md)
+- [Solar-PV](profile/PV_projects.md)
+- [Frugal-Biomed](profile/Frugal_Biomed_projects.md)
+- [Resilient-Alternative-Food](profile/Resilient_Alt_Food_projects.md)
+- [Scientific-Equipment-Instrumentation](profile/Scientific_Equipment_Instrumentation_Project.md)
 
 ## Overview
 
