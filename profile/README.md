@@ -1,5 +1,11 @@
 # Free Appropriate Sustainable Technology (FAST) Research Group
 
+Welcome! Dive into our free and open source projects, look at the project tags for quick insight on what they are each about, our main areas are:
+- [Solar-PV](PV_projects.md)
+- [Frugal-Biomed](Frugal_Biomed_projects.md)
+- [Resilient-Alternative-Food](Resilient_Alt_Food_projects.md)
+- [Scientific-Equipment-Instrumentation](Scientific_Equipment_Instrumentation_Project.md)
+
 ## Overview
 
 Welcome to the FAST research group, led by Professor [Joshua Pearce](https://www.appropedia.org/User:J.M.Pearce), the Thompson Chair in Information Technology and Innovation at Western University's [Thompson Centre for Engineering Leadership & Innovation](https://www.eng.uwo.ca/tc/). Prof. Pearce has affiliations with [Ivey Business School](https://www.ivey.uwo.ca/) and the [Department of Electrical & Computer Engineering](https://www.eng.uwo.ca/electrical/), both part of Western University, a globally ranked institution. Western University is recognized for its sustainability efforts, ranking third worldwide for sustainability in [Times Higher Education](https://www.timeshighereducation.com/rankings/impact/2022/overall#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/undefined) and [Ivey Business School](https://www.ft.com/content/1c6cd228-f0c5-4011-9fec-84a224c1c099) being notable among business schools for the same.
