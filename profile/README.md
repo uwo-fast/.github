@@ -5,10 +5,10 @@
 # Free Appropriate Sustainable Technology (FAST) Research Group
 
 Welcome! Dive into our free and open source projects, look at the project tags for quick insight on what they are each about, our main areas are:
-- [Solar-PV](PV_projects.md)
-- [Frugal-Biomed](Frugal_Biomed_projects.md)
-- [Resilient-Alternative-Food](Resilient_Alt_Food_projects.md)
-- [Scientific-Equipment-Instrumentation](Scientific_Equipment_Instrumentation_projects.md)
+- [Solar-PV](pv-projects.md)
+- [Frugal-Biomed](frugal-biomed-projects.md)
+- [Resilient-Alternative-Food](resilient-alt-food-projects.md)
+- [Scientific-Equipment-Instrumentation](scientific-equipment-instrumentation-projects.md)
 
 See our website for more information on our work: [uwo-fast.github.io](https://uwo-fast.github.io/)
 
