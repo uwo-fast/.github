@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/uwo-fast/.github/main/branding/FAST%20Logo%20Orange%20on%20White%20Transparent.png" alt="FAST Research Group logo" width="320">
+</p>
+
 # Free Appropriate Sustainable Technology (FAST) Research Group
 
 Welcome! Dive into our free and open source projects, look at the project tags for quick insight on what they are each about, our main areas are:
