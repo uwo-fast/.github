@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Research collaboration inquiry
+    url: https://uwo-fast.github.io/
+    about: For research collaboration, partnerships, or academic inquiries, contact Dr. Joshua Pearce (joshua.pearce@uwo.ca).
+  - name: FAST website
+    url: https://uwo-fast.github.io/
+    about: Learn more about the FAST research group and our projects.
+  - name: Security or safety report
+    url: https://github.com/uwo-fast/.github/blob/main/SECURITY.md
+    about: Please report security or safety vulnerabilities privately, not as a public issue.

@@ -11,8 +11,10 @@ Research Group** organization. It serves two purposes:
    - [Scientific-Equipment-Instrumentation](profile/scientific-equipment-instrumentation-projects.md)
 
 2. **Org-wide defaults** — community-health files here are inherited by any repo in the
-   org that doesn't define its own: [`contributing.md`](contributing.md),
-   [`collaborating.md`](collaborating.md), and shared [`branding/`](branding/) assets.
+   org that doesn't define its own: [`CONTRIBUTING.md`](CONTRIBUTING.md),
+   [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md), [`SECURITY.md`](SECURITY.md),
+   [`SUPPORT.md`](SUPPORT.md), issue/PR templates under
+   [`.github/`](.github/), and shared [`branding/`](branding/) assets.
 
 See the group's site for more: <https://uwo-fast.github.io/>
 
