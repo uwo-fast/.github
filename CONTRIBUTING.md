@@ -45,6 +45,14 @@ Unless a repository states otherwise, contributions are made under that
 repository's `LICENSE`. By contributing, you agree your contributions are
 licensed under those same terms.
 
+Repositories that contain hardware designs are licensed separately by component —
+`GPL-3.0-or-later` for software, firmware, and parametric CAD source, and
+`CERN-OHL-S-2.0` for hardware design files and the outputs generated from them.
+Separately by component, not dual-licensed: you do not get to choose which of the
+two covers a given file. A contribution there is licensed under whichever licence
+covers the files it touches, as set out in that repository's `LICENSING.md`. See the
+organization [licensing policy](LICENSING.md) for how the two tracks are chosen.
+
 ## Code of conduct
 
 Participation is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). Please

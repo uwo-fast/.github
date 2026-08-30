@@ -16,6 +16,10 @@ Research Group** organization. It serves two purposes:
    [`SUPPORT.md`](SUPPORT.md), issue/PR templates under
    [`.github/`](.github/), and shared [`branding/`](branding/) assets.
 
+Also here: [`LICENSING.md`](LICENSING.md), the organization licensing policy.
+Unlike the files above it is a policy document, not one GitHub inherits
+automatically, so repositories link to it rather than receiving it.
+
 See the group's site for more: <https://uwo-fast.github.io/>
 
 Licensed under [GPLv3](LICENSE).
