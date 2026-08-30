@@ -17,10 +17,16 @@ available to the next person who needs it.
 **Anything containing hardware design files** — schematics, PCB layouts,
 mechanical CAD, drawings, or a bill of materials:
 
-- Software, firmware, and parametric CAD source — `GPL-3.0-or-later`
+- Software and firmware — `GPL-3.0-or-later`
 - Hardware design files and the outputs generated from them — `CERN-OHL-S-2.0`
-- Documentation — follows the component it documents; documentation that is
-  specific to neither is dual-licensed, at the user's option
+- Parametric CAD source — `GPL-3.0-or-later`, and `CERN-OHL-S-2.0` as well where the
+  project owns it outright; see [Parametric CAD](#parametric-cad) below, which is
+  the case worth reading before choosing anything
+- Documentation — we license documentation specific to software under
+  `GPL-3.0-or-later` and documentation specific to hardware under `CERN-OHL-S-2.0`.
+  A document covering both, and documentation specific to neither, is licensed under
+  both, at the user's option
+- Research data — `CC-BY-4.0`; see [Research data](#research-data)
 
 Start from [`uwo-fast/repo-template`](https://github.com/uwo-fast/repo-template).
 It ships both tracks: a pure-software repository deletes `LICENSES/` and
@@ -35,30 +41,55 @@ It ships both tracks: a pure-software repository deletes `LICENSES/` and
 | `LICENSES/CERN-OHL-S-2.0.txt` | Full CERN-OHL-S-2.0 text |
 | `LICENSING.md` | Plain-language summary of what applies where |
 
-The root `LICENSE` holds the *software* licence deliberately. GitHub reports
-exactly one licence per repository — it reads a root `LICENSE` file whose text
-matches a known licence and does not scan `LICENSES/` — so a repository whose
-root file is a prose summary is reported as having no licence at all. Naming the
-files by SPDX identifier also keeps them compatible with
-[REUSE](https://reuse.software/) if we ever want to lint them.
+The root `LICENSE` holds the *software* licence deliberately. GitHub reports exactly
+one licence per repository, and its detector currently reads only the root file,
+matching it against known licence texts. So a repository whose root file is a prose
+summary — or whose licence text has anything prepended to it — is reported as having
+no licence at all. **Never add a preamble, an SPDX pointer, or a project notice to
+the root `LICENSE`**; put those in `LICENSING.md` or the README, where they cost
+nothing. Naming the files in `LICENSES/` by SPDX identifier is a step toward
+[REUSE](https://reuse.software/), which additionally wants per-file SPDX headers or
+a `REUSE.toml`.
 
-## Parametric CAD is source code
+## Parametric CAD
 
-OpenSCAD, CadQuery, and build123d files are `GPL-3.0-or-later`, not
-`CERN-OHL-S-2.0`. They are compiled rather than drawn, and they routinely include
-GPL-licensed libraries — NopSCADlib, which several FAST projects depend on, is
-GPL-3.0 — and `CERN-OHL-S-2.0` cannot be combined with GPL-3.0 in a single work.
+Parametric CAD — OpenSCAD, CadQuery, build123d — is both source code and hardware
+design source, and CERN-OHL-S-2.0 treats it as the latter: "Source" includes
+"digital code" (§1.3), "Make" includes "compiling" (§1.6), and the Complete Source
+a maker must be given is the design "in the preferred form for making
+modifications" (§1.8) — the `.scad`, not the exported mesh. Licensing generated
+geometry under `CERN-OHL-S-2.0` while keeping its source outside that grant leaves
+a licensee unable to satisfy §4. Source and output therefore travel together:
 
-The geometry those sources generate — STL, STEP, 3MF — together with the drawings
-and bill of materials derived from it, is the repository's own hardware design and
-is `CERN-OHL-S-2.0`. Where a generated output incorporates geometry from a
-third-party GPL library, that output stays `GPL-3.0-or-later`.
+- **CAD with no GPL-licensed dependency** — license the source under **both**
+  `GPL-3.0-or-later` and `CERN-OHL-S-2.0`, and the geometry, drawings and bill of
+  materials generated from it under `CERN-OHL-S-2.0`. As the copyright holder you
+  may grant both, and doing so costs nothing.
+- **CAD that includes a GPL-licensed library** — license the whole chain
+  `GPL-3.0-or-later`: source, geometry, drawings and BOM alike. NopSCADlib, which
+  several FAST projects include, is `GPL-3.0-or-later`, and GPL-3.0 is not a
+  Compatible Licence under CERN-OHL-S-2.0 §1.2, so the whole-work licensing that
+  §3.3(d) requires cannot be granted over source entangled with it. Nor does such a
+  library qualify as an Available Component: §1.7(b) reaches physical parts and
+  tool distributions, not an included design library. The hardware track still
+  covers that repository's electronics and any non-parametric mechanical design.
+
+`GPL-3.0-or-later` is a legitimate licence for a hardware design — it is what much
+of the 3D-printing world publishes under. What the second case gives up is
+CERN-OHL-S's hardware-specific reciprocity, not openness.
+
+## Research data
+
+Measurement data, calibration sets, and test fixtures' expected outputs are not
+software and not a hardware design; neither licence above reaches them usefully.
+License research data `CC-BY-4.0`, or `CC0-1.0` where attribution would be
+impractical for downstream aggregation, and say which in the repository's
+`LICENSING.md`.
 
 ## Exceptions
 
 - **`AGPL-3.0-or-later`** when the software is used over a network — a server, web
-  app, or hosted analysis tool. Already in use in `OpenReactor2`,
-  `OS-Mechanical-Tester`, and `well-plate-guide`.
+  app, or hosted analysis tool. Several FAST repositories already use it.
 - **A permissive licence** (`MIT`, `BSD-3-Clause`, `Apache-2.0`) for a library meant
   to be embedded widely, where adoption matters more than reciprocity. Say so in
   the repository's README.
