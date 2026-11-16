@@ -14,12 +14,14 @@ Closes #
 
 ## Validation
 
-Tick one, then describe what you did. A CAD render, a simulation, or a passing
-build is not physical validation.
+Tick one, then describe what you did. Validation means checking against reality:
+building, printing, or bench-testing hardware; running software on the hardware it
+drives; or comparing a model's results with measured data or a published reference
+case. A CAD render, a simulation on its own, or a passing build does not count.
 
-- [ ] Physically validated: I built, printed, or bench-tested the change (describe what and how)
-- [ ] Not physically validated: I opened this as a draft and ask for maintainer review before it is ready to merge
-- [ ] No physical effect: documentation, tooling, or software that drives no hardware (describe the tests or build you ran)
+- [ ] Validated against reality (describe what and how)
+- [ ] Not validated: I opened this as a draft and ask for maintainer review before it is ready to merge
+- [ ] No effect on hardware or results: documentation or tooling only (describe any checks you ran)
 
 ## Checklist
 
