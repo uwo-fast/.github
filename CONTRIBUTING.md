@@ -25,14 +25,39 @@ report includes:
 - Your environment: OS, toolchain/library versions, board or hardware revision.
 - Logs, photos, or screenshots where relevant.
 
+## Before you open a pull request
+
+FAST projects are physical engineering: a change here ends up in a part someone
+prints, machines, or wires up. Every pull request costs a maintainer review time.
+
+- **Understand the project first.** Open a pull request only for a concrete,
+  justified improvement you can explain. Open source is not a
+  contribution-counting exercise.
+- **AI assistance is fine; contribution farming is not.** Using AI tools to make a
+  genuine improvement is welcome. Automated pull requests from someone who has not
+  engaged with the codebase are not.
+- **Discuss non-trivial changes in an issue first.** A change to code, firmware,
+  CAD, or a design needs a linked issue where the approach was discussed. Typo and
+  documentation fixes can go straight to a pull request.
+- **Physically validate your change, or offer to.** Build, print, or bench-test
+  what you changed, and say what you did.
+- **If you cannot validate it, open a draft.** Say plainly that the change has not
+  been physically validated and ask for maintainer review. It is not ready to merge
+  until that review is done.
+
+Pull requests that do not follow this may be closed without a detailed review.
+
 ## Submitting changes (pull requests)
 
 1. Fork the repository and create a topic branch off `main`.
 2. Make focused, single-purpose changes — keep unrelated changes in separate PRs.
 3. Follow the existing style and structure of the repository you're working in.
-4. Test your change and describe how you verified it in the PR description.
-5. Reference any related issue (e.g. "Closes #12").
-6. Open the pull request against `main` and fill out the PR template.
+4. Validate your change and describe how in the PR description. A CAD render, a
+   simulation, or a passing build is not physical validation.
+5. Link the issue where a non-trivial change was discussed (e.g. "Closes #12").
+   Typo and documentation fixes do not need one.
+6. Open the pull request against `main` and fill out the PR template. If the change
+   has not been physically validated, open it as a draft and say so.
 
 ## Commit messages
 
