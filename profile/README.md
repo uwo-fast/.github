@@ -1,25 +1,48 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/uwo-fast/.github/main/branding/FAST%20Logo%20Orange%20on%20White%20Transparent.png" alt="FAST Research Group logo" width="320">
+  <img src="https://raw.githubusercontent.com/uwo-fast/.github/main/branding/FAST%20Logo%20Purple.png" alt="FAST Research Group logo" width="240">
 </p>
 
-# Free Appropriate Sustainable Technology (FAST) Research Group
+# Free Appropriate Sustainability Technology (FAST) Research Group
 
-Welcome! Dive into our free and open source projects, look at the project tags for quick insight on what they are each about, our main areas are:
-- [Solar-PV](pv-projects.md)
-- [Frugal-Biomed](frugal-biomed-projects.md)
-- [Resilient-Alternative-Food](resilient-alt-food-projects.md)
-- [Scientific-Equipment-Instrumentation](scientific-equipment-instrumentation-projects.md)
+FAST is Professor [Joshua M. Pearce](https://www.appropedia.org/User:J.M.Pearce)'s
+research group at Western University in London, Ontario. We design low-cost,
+open-source hardware and release it under free and open-source licences, so that
+others can build it, repair it and adapt it.
 
-See our website for more information on our work: [uwo-fast.github.io](https://uwo-fast.github.io/)
+Each project below has a page on our website, **[uwo-fast.github.io](https://uwo-fast.github.io/)**,
+rendered from the repository's own documentation.
 
-## Overview
+## Scientific equipment and instrumentation
 
-Welcome to the FAST research group, led by Professor [Joshua Pearce](https://www.appropedia.org/User:J.M.Pearce), the Thompson Chair in Information Technology and Innovation at Western University's [Thompson Centre for Engineering Leadership & Innovation](https://www.eng.uwo.ca/tc/). Prof. Pearce has affiliations with [Ivey Business School](https://www.ivey.uwo.ca/) and the [Department of Electrical & Computer Engineering](https://www.eng.uwo.ca/electrical/), both part of Western University, a globally ranked institution. Western University is recognized for its sustainability efforts, ranking third worldwide for sustainability in [Times Higher Education](https://www.timeshighereducation.com/rankings/impact/2022/overall#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/undefined) and [Ivey Business School](https://www.ft.com/content/1c6cd228-f0c5-4011-9fec-84a224c1c099) being notable among business schools for the same.
+- [open-source-bioreactor](https://github.com/uwo-fast/open-source-bioreactor): a parametric OpenSCAD bioreactor built on glass jars from 1.5 L to 6.5 gal.
+- [openreactor](https://github.com/uwo-fast/openreactor): supervise bench-scale reactors from a Raspberry Pi, with sensor logging, heater and motor setpoints, and recorded runs in a web interface.
+- [syringe-actuator](https://github.com/uwo-fast/syringe-actuator): a printed crank that strokes a 1 to 30 mL luer syringe's plunger back and forth from a gearmotor that never reverses.
+- [mass-scale](https://github.com/uwo-fast/mass-scale): a 3D-printed digital scale with a load cell, an HX711 and an Arduino Nano, read over serial for data logging.
+- [well-plate-guide](https://github.com/uwo-fast/well-plate-guide): a parametric OpenSCAD guide that steers a pipette tip into the centre of each well of a standard well plate.
+- [ambb](https://github.com/uwo-fast/ambb): a 3D-printed, solderless adapter that plugs an 8-SOIC chip into a breadboard like a DIP part.
 
-## Contributions to Sustainability
+## Distributed recycling and additive manufacturing
 
-FAST contributes to Western's sustainability achievements, focusing on solar photovoltaic technology for sustainable power and open-source hardware for technological empowerment. The group actively engages in projects related to open-source appropriate technologies (OSAT) and distributed recycling and additive manufacturing (DRAM) through RepRap 3-D printing.
+- [feedstock-hopper](https://github.com/uwo-fast/feedstock-hopper): a parametric, printable hopper for plastic pellets and shredded regrind.
+- [desktop-sheet-press](https://github.com/uwo-fast/desktop-sheet-press): control electronics, firmware and enclosure for a heated scientific sheet press.
+- [pipe-fitting-scad](https://github.com/uwo-fast/pipe-fitting-scad): a parametric OpenSCAD generator for threaded pipe couplings.
 
-## Alignment with Global Sustainability Goals
+## Frugal biomedical
 
-Western leads in advancing the United Nations Sustainable Development Goals (SDGs), as evidenced by its top ranking in Canada and third globally in the 2022 Impact Rankings by [Times Higher Education](https://www.timeshighereducation.com/rankings/impact/2022/overall#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/undefined). FAST is integral to this effort, aligning with Western's [Strategic Plan](https://strategicplan.uwo.ca/) and [sustainability goals](https://sustainability.uwo.ca/sdg/index.html), contributing to Western's [responsible investment strategy](https://news.westernu.ca/2021/11/responsible-investing-contributes-to-significant-carbon-footprint-reduction/) and commitment to [net zero emissions](https://news.westernu.ca/2022/04/decarbonization-key-to-westerns-net-zero-emissions-investment-goal/).
+- [nasopharyngeal-swab](https://github.com/uwo-fast/nasopharyngeal-swab): a parametric swab printed in resin, with a handle printed on an FFF printer.
+- [uv-curing-box](https://github.com/uwo-fast/uv-curing-box): a modular UV LED curing box built from identical LED boards and printed brackets.
+
+## Resilient and alternative food
+
+- [farm-tools-scad](https://github.com/uwo-fast/farm-tools-scad): parametric OpenSCAD designs for small-scale farming tools.
+
+## More
+
+- Solar photovoltaics: [SAMA](https://github.com/uwo-fast/SAMA), the Solar Alone
+  Multi-objective Advisor.
+- The lab's safety signs are published at [uwo-fast.github.io/signs](https://uwo-fast.github.io/signs/).
+- More of the group's work, past and present, is on its
+  [Appropedia page](https://www.appropedia.org/FAST).
+- Each repository states its own licence; the
+  [licensing policy](https://github.com/uwo-fast/.github/blob/main/LICENSING.md) sets
+  the default for new ones.
