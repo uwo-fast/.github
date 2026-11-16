@@ -25,14 +25,44 @@ report includes:
 - Your environment: OS, toolchain/library versions, board or hardware revision.
 - Logs, photos, or screenshots where relevant.
 
+## Before you open a pull request
+
+FAST projects typically involve physical engineering. Even our software usually
+drives hardware or informs a physical design, so a mistake can end up in a real
+part, a lab rig, or a system someone buys. Every pull request also costs a
+maintainer review time.
+
+- **Understand the project first.** Open a pull request only for a concrete,
+  justified improvement you can explain. Open source is not a
+  contribution-counting exercise.
+- **AI assistance is fine; contribution farming is not.** Using AI tools to make a
+  genuine improvement is welcome. Automated pull requests from someone who has not
+  engaged with the codebase are not.
+- **Discuss non-trivial changes in an issue first.** A change to code, firmware,
+  CAD, or a design needs a linked issue where the approach was discussed. Typo and
+  documentation fixes can go straight to a pull request.
+- **Validate your change against reality, or offer to.** For hardware, CAD, and
+  firmware, build, print, or bench-test it. For software that drives hardware, run
+  it on the hardware. For models and design tools, check the results against
+  measured data or a published reference case. Say what you did.
+- **If you cannot validate it, open a draft.** Say plainly that the change has not
+  been validated and ask for maintainer review. It is not ready to merge until that
+  review is done.
+
+Pull requests that do not follow this may be closed without a detailed review.
+
 ## Submitting changes (pull requests)
 
 1. Fork the repository and create a topic branch off `main`.
 2. Make focused, single-purpose changes — keep unrelated changes in separate PRs.
 3. Follow the existing style and structure of the repository you're working in.
-4. Test your change and describe how you verified it in the PR description.
-5. Reference any related issue (e.g. "Closes #12").
-6. Open the pull request against `main` and fill out the PR template.
+4. Validate your change and describe how in the PR description. A CAD render, a
+   simulation on its own, or a passing build does not count: none of them is
+   checked against reality.
+5. Link the issue where a non-trivial change was discussed (e.g. "Closes #12").
+   Typo and documentation fixes do not need one.
+6. Open the pull request against `main` and fill out the PR template. If the change
+   has not been validated, open it as a draft and say so.
 
 ## Commit messages
 
